@@ -2,6 +2,13 @@
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
+int WriteNummer(int a, int b, int sum = 0)
+{
+    sum+=a;
+    if(a==b) return sum;
+    return WriteNummer(a+1,b, sum);
+}
+Console.WriteLine(WriteNummer(1,15));
 
 
 // int m = InputInt("Введите M:");
